@@ -18,3 +18,12 @@ Implemente uma solução que permita a criação, leitura e exclusão destas pal
 
 A tabela de diretório deverá ser simples, onde cada linha indica o nome do arquivo (f1, f2 etc.) o índice/endereço no vetor onde começa o arquivo.
 
+## Pré-requisito
+- Java 8 ou superior
+- Maven
+
+## Como compilar
+
+1. Abra o terminal
+2. Na pasta raiz do projeto compile com o seguinte comando `mvn compile`
+
