@@ -22,8 +22,29 @@ A tabela de diretório deverá ser simples, onde cada linha indica o nome do arq
 - Java 8 ou superior
 - Maven
 
-## Como compilar
+## Como executar
+- Basta executar o arquivo `Main`
 
-1. Abra o terminal
-2. Na pasta raiz do projeto compile com o seguinte comando `mvn compile`
+## Funcionalidades
 
+O sistema de arquivos suporta as seguintes operações:
+
+- `createFile(String fileContent)`: Cria um novo arquivo com o conteúdo especificado. O nome do arquivo é o mesmo que o conteúdo do arquivo.
+- `deleteFile(String fileName)`: Exclui o arquivo com o nome especificado.
+- `showMemory()`: Imprime o estado atual da memória, mostrando quais blocos estão ocupados e quais estão vazios.
+
+## Exemplo de uso
+
+Aqui está um exemplo de como você pode usar o sistema de arquivos:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        FileSystem fs = new FileSystem(32);
+        fs.createFile("Hello");
+        fs.printMemory();
+        fs.deleteFile("Hello");
+        fs.printMemory();
+    }
+    
+}
